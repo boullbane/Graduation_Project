@@ -96,6 +96,59 @@
 
         }
     }
+
+    #post {
+        padding: 1rem;
+
+        #title {
+            float: none !important;
+            margin: 0 auto !important;
+            width: 100% !important
+        }
+
+        p {
+            float: none !important;
+            margin: 50px 0 !important;
+            width: 100% !important
+        }
+
+        #img-preview {
+            margin-right: 0 !important;
+            float: none !important;
+            width: 100% !important
+        }
+
+
+
+        .owner {
+            float: none !important;
+            margin-right: 0 !important;
+
+            &-pic {
+                position: relative;
+                left: 50%;
+                top: 0;
+                transform: translate(-50%, 0)
+            }
+
+            span {
+                display: block;
+                width: 100%;
+                left: 0 !important;
+                top: 0 !important;
+                text-align: center;
+                margin-top: 1rem;
+            }
+
+            #date {
+                float: none !important;
+                text-align: center;
+                margin: 0 !important;
+
+            }
+        }
+
+    }
 }
 
 @include mobile-query {

@@ -12,9 +12,9 @@
 	<link rel="stylesheet" href="css/post.css">
 </head>
 <body>
-	<div class="container">
+	<div id="post" class="container">
 		<h1 id="title"><?php echo $result['title']; ?></h1>
-		<?php echo $result['content']; ?>
+		<section><?php echo $result['content']; ?></section>
 		<div class="owner">
 			<div class="owner-pic">
 				<img src="<?php echo $result['admin_img']; ?>" alt="">

@@ -1,6 +1,7 @@
 @import 'config';
 @import 'variables';
 @import 'mixins';
+@import 'responsive';
 
 .container {
     width: 100%;
@@ -9,7 +10,7 @@
 
     #title {
         float: right;
-        font-size: 70px;
+        font-size: 6rem;
         margin-top: 100px;
         width: 700px;
         margin-right: 100px;
@@ -39,6 +40,7 @@
         float: right;
         position: relative;
         margin-right: -620px;
+        padding-top: 2rem;
 
         .owner-pic {
             width: 70px;

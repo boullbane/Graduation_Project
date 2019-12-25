@@ -86,6 +86,48 @@ ul {
     font-size: 3vw !important;
     padding-bottom: 1rem !important;
   }
+
+  #post {
+    padding: 1rem;
+  }
+  #post #title {
+    float: none !important;
+    margin: 0 auto !important;
+    width: 100% !important;
+  }
+  #post p {
+    float: none !important;
+    margin: 50px 0 !important;
+    width: 100% !important;
+  }
+  #post #img-preview {
+    margin-right: 0 !important;
+    float: none !important;
+    width: 100% !important;
+  }
+  #post .owner {
+    float: none !important;
+    margin-right: 0 !important;
+  }
+  #post .owner-pic {
+    position: relative;
+    left: 50%;
+    top: 0;
+    transform: translate(-50%, 0);
+  }
+  #post .owner span {
+    display: block;
+    width: 100%;
+    left: 0 !important;
+    top: 0 !important;
+    text-align: center;
+    margin-top: 1rem;
+  }
+  #post .owner #date {
+    float: none !important;
+    text-align: center;
+    margin: 0 !important;
+  }
 }
 @media screen and (max-width: 500px) {
   main .grid {
