@@ -1,0 +1,198 @@
+*,
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "maison neue";
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.clear-fix {
+  clear: both;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+}
+.container div {
+  float: left;
+  overflow: hidden;
+}
+.container .left-side {
+  position: relative;
+  width: 20%;
+  height: 100%;
+  background: #131418;
+  text-align: center;
+  color: #fff;
+}
+.container .left-side .admin-picture {
+  width: 100px;
+  height: 100px;
+  border-radius: 5px;
+  overflow: hidden;
+  margin: 0 auto;
+  position: absolute;
+  left: 50%;
+  top: 100px;
+  margin-left: -50px;
+}
+.container .left-side .admin-picture img {
+  width: 100%;
+}
+.container .left-side h2 {
+  position: relative;
+  top: 230px;
+  font-size: 15px;
+  font-weight: 600;
+  text-transform: capitalize;
+  line-height: 25px;
+}
+.container .left-side h2 span {
+  display: block;
+  font-size: 15px;
+  color: #cdcd;
+  text-transform: lowercase;
+}
+.container .left-side nav {
+  position: relative;
+  top: 270px;
+  width: 100%;
+  text-align: center;
+}
+.container .left-side nav ul li {
+  width: 80%;
+  padding: 15px 0px;
+  margin: 0 auto;
+  border-radius: 2px;
+  text-transform: capitalize;
+  font-size: 14px;
+  cursor: pointer;
+  -webkit-transition: all 0.5s ease-out;
+  -o-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+  margin-bottom: 10px;
+}
+.container .left-side nav ul li:hover {
+  background: #2a2c34;
+  color: #fff;
+}
+.container .left-side nav ul .active {
+  background: #1472ff;
+  color: #fff;
+}
+.container .right-side {
+  position: relative;
+  width: 80%;
+  height: 100%;
+  overflow: scroll;
+}
+.container .right-side .grid {
+  position: absolute;
+  width: auto;
+  top: 50px;
+  left: 150px;
+}
+.container .right-side .grid .grid-item {
+  cursor: pointer;
+  width: 210px;
+  height: 210px;
+  float: left;
+  margin-right: 25px;
+  margin-left: 25px;
+  margin-bottom: 70px;
+  overflow: unset;
+}
+.container .right-side .grid .grid-item .image-placeholder {
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+}
+.container .right-side .grid .grid-item .image-placeholder img {
+  width: 100%;
+}
+.container .right-side .grid .grid-item h1 {
+  font-size: 17px;
+  font-weight: 600;
+  margin-top: 220px;
+  color: #131418;
+}
+.container .right-side .post-managements {
+  display: none;
+  height: 600px;
+}
+.container .right-side .post-managements * {
+  color: #131418;
+}
+.container .right-side .post-managements h1 {
+  font-size: 30px;
+  margin-left: 100px;
+  margin-top: 50px;
+  text-transform: capitalize;
+  font-weight: 600;
+}
+.container .right-side .post-managements form {
+  position: relative;
+  left: 100px;
+  top: 50px;
+}
+.container .right-side .post-managements form .post-select {
+  display: none;
+}
+.container .right-side .post-managements form button {
+  width: 200px;
+  height: 50px;
+  border-radius: 2px;
+  color: #fff;
+  background: #27af27;
+  border: none;
+  text-transform: uppercase;
+  margin-top: 370px;
+  margin-left: -215px;
+  cursor: pointer;
+  -webkit-transition: all 0.5s ease-out;
+  -o-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+  outline: none;
+}
+.container .right-side .post-managements form button:hover {
+  background: #229a22;
+}
+.container .right-side .post-managements div {
+  float: left;
+  margin-right: 15px;
+}
+.container .right-side .post-managements div * {
+  display: block;
+}
+.container .right-side .post-managements div label {
+  font-size: 13px;
+  font-weight: 600;
+  text-transform: capitalize;
+  margin-bottom: 10px;
+}
+.container .right-side .post-managements div input,
+.container .right-side .post-managements div select {
+  width: 200px;
+  height: 40px;
+  border-radius: 2px;
+  border: 1px solid #ccc;
+  padding-left: 10px;
+  margin-bottom: 15px;
+}
+.container .right-side .post-managements div textarea {
+  display: block;
+  width: 845px;
+  height: 250px;
+  padding-left: 10px;
+  padding-top: 10px;
+}

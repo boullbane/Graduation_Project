@@ -1,0 +1,31 @@
+// Transition ease out
+@mixin easeOut {
+    -webkit-transition: all 0.5s ease-out;
+    -o-transition: all 0.5s ease-out;
+    transition: all 0.5s ease-out;
+}
+
+// Media queries 
+@mixin lg-screen-query {
+    @media screen and (min-width: 921px) and (max-width: 1101px) {
+        @content;
+    }
+}
+
+@mixin sm-screen-query {
+    @media screen and (min-width: 768px) and (max-width: 920px) {
+        @content;
+    }
+}
+
+@mixin tablett-query {
+    @media screen and (max-width: 767px) {
+        @content;
+    }
+}
+
+@mixin mobile-query {
+    @media screen and (max-width: 500px) {
+        @content;
+    }
+}

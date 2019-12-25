@@ -1,0 +1,72 @@
+@import 'config';
+@import 'variables';
+@import 'mixins';
+
+.container {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+
+    #title {
+        float: right;
+        font-size: 70px;
+        margin-top: 100px;
+        width: 700px;
+        margin-right: 100px;
+        line-height: 80px;
+    }
+
+    p {
+        font-size: 15px;
+        font-weight: 600;
+        line-height: 25px;
+        width: 700px;
+        text-align: justify;
+        float: right;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        margin-right: 100px;
+        color: #777;
+    }
+
+    #img-preview {
+        width: 500px;
+        float: right;
+        margin-right: 300px;
+    }
+
+    .owner {
+        float: right;
+        position: relative;
+        margin-right: -620px;
+
+        .owner-pic {
+            width: 70px;
+            height: 70px;
+            border-radius: 100%;
+            overflow: hidden;
+
+            img {
+                width: 100%;
+            }
+        }
+
+        span {
+            position: relative;
+            top: -55px;
+            left: 90px;
+            font-weight: 600;
+            font-size: 16px;
+            text-transform: capitalize;
+            line-height: 20px;
+        }
+
+        #date {
+            float: right;
+            margin-top: -50px;
+            margin-left: 500px;
+            text-transform: capitalize;
+            color: $primary-color;
+        }
+    }
+}

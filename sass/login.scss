@@ -1,0 +1,119 @@
+@import 'config';
+@import 'variables';
+@import 'mixins';
+
+#notfound {
+    color: #fff;
+    background: $warning-msg-color;
+    text-align: center;
+    font-weight: 500;
+    font-size: 13px;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    width: 50%;
+    padding: 15px 0px;
+    text-transform: capitalize;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+
+    div {
+        float: left;
+        width: 50%;
+        height: 100%;
+        overflow: hidden;
+    }
+
+    .left-side {
+        img {
+            width: 100%;
+        }
+
+        h1 {
+            z-index: 1;
+            position: absolute;
+            bottom: 50px;
+            color: #fff;
+            font-size: 70px;
+            left: 50px;
+            font-weight: 500;
+            width: 450px;
+        }
+    }
+
+    .right-side {
+        .info-message {
+            display: none;
+            width: 50%;
+            position: absolute;
+            height: auto;
+            top: 0;
+            right: 0;
+            background: $warning-msg-color;
+            color: #fff;
+            text-align: center;
+            font-weight: 500;
+            font-size: 13px;
+            text-transform: capitalize;
+
+            p {
+                padding: 15px 0px;
+            }
+        }
+
+        form {
+            width: 400px;
+            margin: 0 auto;
+            position: relative;
+            top: 150px;
+
+            * {
+                display: block;
+                width: 100%;
+            }
+
+            h1 {
+                font-size: 50px;
+                color: $primary-color;
+                position: relative;
+                margin-bottom: 40px;
+            }
+
+            label {
+                font-size: 13px;
+                margin-bottom: 10px;
+                font-weight: 500;
+            }
+
+            input {
+                height: 40px;
+                border: 1px solid #ccc;
+                border-radius: 2px;
+                margin-bottom: 10px;
+                padding-left: 15px;
+                font-weight: 600;
+            }
+
+            button {
+                height: 50px;
+                color: #fff;
+                background: $btn-primary-color;
+                font-weight: 500;
+                border: none;
+                border-radius: 2px;
+                cursor: pointer;
+                @include easeOut;
+
+                &:hover {
+                    background: darken($btn-primary-color, 5%);
+                }
+            }
+        }
+    }
+}
